@@ -54,8 +54,12 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <div className="px-2 flex flex-col mb-20">
-        <span>- When all crypto items are selected, the `Add a Balance` button will be hidden</span>
-        <span>- The `Show result` button appears after adding at least 2 crypto balances.</span>
+        <span>
+          - When all crypto items are selected, the `Add a Balance` button will be disabled
+        </span>
+        <span>
+          - The `Show result` button will be enabled only when adding 2 or more crypto balances.
+        </span>
       </div>
 
       {/* Display the selected balances here */}
